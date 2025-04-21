@@ -99,6 +99,8 @@ int main(int argc, char** argv)
 			       argv[1], argv[j]);
 	}
 
+	destroy(text, openmpt_free_string);
+
 	// sample names
 
 	n = openmpt_module_get_num_samples(mod);
